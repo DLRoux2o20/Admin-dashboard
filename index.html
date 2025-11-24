@@ -4,30 +4,53 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+		<script
+			src="https://kit.fontawesome.com/3a1a862694.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Admin dashboard</title>
 	</head>
 	<body>
 		<div class="grid" id="main-div">
 			<div id="sidebar-div">
-                <h3>Dashboard</h3>
-                <div class="nav-div" id="nav-div1">
-                    <p class="link">Home</p>
-                    <p class="link">Profile</p>
-                    <p class="link">Messages</p>
-                    <p class="link">History</p>
-                    <p class="link">Tasks</p>
-                    <p class="link">Communities</p>
-                </div>
-                <div class="nav-div" id="nav-div2">
-                    <p class="link">Settings</p>
-                    <p class="link">Support</p>
-                    <p class="link">Privacy</p>
-                </div>
-            </div>
-			<div id="header-div">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" id="searchbar"></input>
-            </div>
+				<h3>Dashboard</h3>
+				<div class="nav-div" id="nav-div1">
+					<p class="link">Home</p>
+					<p class="link">Profile</p>
+					<p class="link">Messages</p>
+					<p class="link">History</p>
+					<p class="link">Tasks</p>
+					<p class="link">Communities</p>
+				</div>
+				<div class="nav-div" id="nav-div2">
+					<p class="link">Settings</p>
+					<p class="link">Support</p>
+					<p class="link">Privacy</p>
+				</div>
+			</div>
+			<div class="grid" id="header-div">
+				<div class="flex header-child-div" id="search-div">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="search" id="searchbar" />
+				</div>
+				<div class="flex header-child-div">
+					<i class="fa-regular fa-bell"></i>
+					<div class="pfp-div"></div>
+					<span class="profile-name">Duan le Roux</span>
+				</div>
+				<div class="flex header-child-div">
+					<div class="pfp-div big-pfp-div"></div>
+					<div id="big-pfp-text-div">
+						<p>Hi there,</p>
+						<p class="profile-name big-profile-name">Duan le Roux (@DLRoux)</p>
+					</div>
+				</div>
+				<div class="flex header-child-div" id="header-child-div-buttons">
+					<button>New</button>
+					<button>Upload</button>
+					<button>Share</button>
+				</div>
+			</div>
 			<div class="grid" id="main-content-div">
 				<div class="grid" id="projects-div"></div>
 				<div class="grid" id="anouncements-and-trending-div"></div>

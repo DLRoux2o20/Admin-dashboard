@@ -71,8 +71,57 @@ body {
 	height: max(100vh, max-content);
 }
 
+input {
+	height: 50%;
+	border: 0;
+	background-color: var(--grey);
+	border-radius: 20px;
+}
+
+button {
+	width: 20%;
+	background-color: var(--blue);
+	color: white;
+	border: none;
+	font-weight: bold;
+	border-radius: 15px;
+}
+
 .grid {
 	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.header-child-div {
+	width: 100%;
+	padding-left: 1em;
+	gap: 1em;
+	align-items: center;
+}
+
+.pfp-div {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: var(--yellow2);
+	border-radius: 50%;
+}
+
+.big-pfp-div {
+	width: 45px;
+	height: 45px;
+	aspect-ratio: 1/1;
+}
+
+.profile-name {
+	font-weight: bold;
+}
+
+#big-pfp-text-div {
+	display: inline-block;
 }
 
 #main-div {
@@ -87,7 +136,9 @@ body {
 }
 
 #header-div {
+	height: 20vh;
 	background-color: white;
+	grid-template: 1fr 1fr 1.5fr 1.5fr / repeat(auto-fit, 390px);
 }
 
 #main-content-div {
