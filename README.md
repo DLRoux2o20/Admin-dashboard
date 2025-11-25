@@ -1,1 +1,1 @@
-# Admin-dashboard
+Lessons: Use width: 100%; on body instead of width: 100vw; so that content does not go under scrollbar.

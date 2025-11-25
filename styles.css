@@ -18,8 +18,6 @@
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
-	width: 100vw;
-	height: 100vh;
 }
 
 img,
@@ -67,7 +65,7 @@ h6 {
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	height: max(100vh, max-content);
 }
 
@@ -85,6 +83,11 @@ button {
 	border: none;
 	font-weight: bold;
 	border-radius: 15px;
+}
+
+h3 {
+	margin-top: 1em;
+	margin-bottom: 10px;
 }
 
 .grid {
@@ -120,6 +123,14 @@ button {
 	font-weight: bold;
 }
 
+.card {
+	width: 100%;
+	height: 15vh;
+	background-color: white;
+	border-left: 8px solid var(--yellow2);
+	border-radius: 5px;
+}
+
 #big-pfp-text-div {
 	display: inline-block;
 }
@@ -142,5 +153,11 @@ button {
 }
 
 #main-content-div {
+	box-sizing: content-box;
 	background-color: var(--grey);
+	padding-inline: 1em;
+}
+
+#projects-div {
+	gap: 1em;
 }
