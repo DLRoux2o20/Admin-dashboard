@@ -76,16 +76,17 @@ input {
 	border-radius: 20px;
 }
 
-p, button {
+p,
+button,
+h3 {
 	font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
 }
 
 p {
+	font-weight: 400;
 	font-size: 0.9rem;
 }
 
@@ -93,7 +94,7 @@ button {
 	width: 25%;
 	height: 50%;
 	font-size: 0.7rem;
-	font-weight: 700;
+	font-weight: 600;
 	background-color: var(--blue);
 	color: white;
 	border: none;
@@ -102,8 +103,17 @@ button {
 }
 
 h3 {
-	margin-top: 1em;
+	font-weight: 600;
+	margin-top: 1.2em;
 	margin-bottom: 10px;
+}
+
+hr {
+	height: 2px;
+	border: none;
+	border-radius: 8px;
+	background-color: var(--grey);
+	margin-block: 1em;
 }
 
 .grid {
@@ -124,19 +134,19 @@ h3 {
 
 .pfp-div {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	background-color: var(--yellow2);
 	border-radius: 50%;
 }
 
 .big-pfp-div {
-	width: 45px;
-	height: 45px;
+	width: 50px;
+	height: 50px;
 	aspect-ratio: 1/1;
 }
 
-.profile-name {
+.main-profile-name {
 	font-weight: bold;
 }
 
@@ -151,7 +161,7 @@ h3 {
 }
 
 .card-heading {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 1rem;
 	margin-bottom: 0.2em;
 }
@@ -165,6 +175,40 @@ h3 {
 .icons-div {
 	justify-self: right;
 	gap: 0.8em;
+}
+
+.announcements-heading {
+	font-weight: 600;
+}
+
+.announcements-body {
+	line-height: 1.2;
+	color: #757575;
+	font-size: 0.8rem;
+}
+
+.trending-profile-div {
+	align-items: center;
+	gap: 0.5em;
+}
+
+.trending-pfp-div {
+	width: 45px;
+	height: 45px;
+}
+
+.trending-profile-name-and-description-div {
+	display: inline-block;
+	line-height: 1.4;
+}
+
+.trending-profile-name {
+	font-size: 0.9rem;
+}
+
+.trending-profile-description {
+	font-size: 0.86rem;
+	color: #757575;
 }
 
 #big-pfp-text-div {
@@ -198,6 +242,39 @@ h3 {
 	padding-inline: 1em;
 }
 
+#projects-div, #announcements-div {
+	margin-bottom: 10px;
+}
+
 #projects-div {
 	gap: 1em;
+}
+
+#announcements-div {
+	width: 100%;
+	padding: 2em;
+	border-radius: 8px;
+	background-color: white;
+}
+
+#trending-div {
+	width: 100%;
+	flex-direction: column;
+	gap: 1.5em;
+	padding: 1.5em;
+	margin-bottom: 30px;
+	border-radius: 8px;
+	background-color: white;
+}
+
+#trending-pfp-div-1 {
+	background-color: #95d7e6;
+}
+
+#trending-pfp-div-3 {
+	background-color: #6e6e6e;
+}
+
+#trending-pfp-div-4 {
+	background-color: #f2aae7;
 }
