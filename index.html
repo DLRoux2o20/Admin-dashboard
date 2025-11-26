@@ -19,20 +19,56 @@
 	</head>
 	<body>
 		<div class="grid" id="main-div">
-			<div id="sidebar-div">
-				<h3>Dashboard</h3>
-				<div class="nav-div" id="nav-div1">
-					<p class="link">Home</p>
-					<p class="link">Profile</p>
-					<p class="link">Messages</p>
-					<p class="link">History</p>
-					<p class="link">Tasks</p>
-					<p class="link">Communities</p>
+			<div class="grid" id="sidebar-div">
+				<div class="flex" id="sidebar-heading-div">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<title>view-dashboard</title>
+						<path
+							fill="white"
+							d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+						/>
+					</svg>
+					<h3>Dashboard</h3>
 				</div>
-				<div class="nav-div" id="nav-div2">
-					<p class="link">Settings</p>
-					<p class="link">Support</p>
-					<p class="link">Privacy</p>
+				<div class="flex nav-div" id="nav-div1">
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-house"></i>
+						<p class="link">Home</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-regular fa-address-card"></i>
+						<p class="link">Profile</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-message"></i>
+						<p class="link">Messages</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-clock-rotate-left"></i>
+						<p class="link">History</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-list-check"></i>
+						<p class="link">Tasks</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-people-roof"></i>
+						<p class="link">Communities</p>
+					</div>
+				</div>
+				<div class="flex nav-div" id="nav-div2">
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-gear"></i>
+						<p class="link">Settings</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-circle-question"></i>
+						<p class="link">Support</p>
+					</div>
+					<div class="flex icon-and-link-div">
+						<i class="fa-solid fa-lock"></i>
+						<p class="link">Privacy</p>
+					</div>
 				</div>
 			</div>
 			<div class="grid" id="header-div">
@@ -49,9 +85,7 @@
 					<div class="pfp-div big-pfp-div"></div>
 					<div id="big-pfp-text-div">
 						<p>Hi there,</p>
-						<p class="main-profile-name big-main-profile-name">
-							Duan le Roux (@DLRoux)
-						</p>
+						<p class="big-main-profile-name">Duan le Roux (@DLRoux)</p>
 					</div>
 				</div>
 				<div class="flex header-child-div" id="header-child-div-buttons">
@@ -167,28 +201,44 @@
 						<h3>Trending</h3>
 						<div class="flex" id="trending-div">
 							<div class="flex trending-profile-div">
-								<div class="trending-pfp-div pfp-div" id="trending-pfp-div-1"></div>
+								<div
+									class="trending-pfp-div pfp-div"
+									id="trending-pfp-div-1"
+								></div>
 								<div class="trending-profile-name-and-description-div">
 									<p class="trending-profile-name">@terry</p>
-									<p class="trending-profile-description">World Peace Builder</p>
+									<p class="trending-profile-description">
+										World Peace Builder
+									</p>
 								</div>
 							</div>
 							<div class="flex trending-profile-div">
-								<div class="trending-pfp-div pfp-div" id="trending-pfp-div-2"></div>
+								<div
+									class="trending-pfp-div pfp-div"
+									id="trending-pfp-div-2"
+								></div>
 								<div class="trending-profile-name-and-description-div">
 									<p class="trending-profile-name">@jamal</p>
-									<p class="trending-profile-description">Chill Vibe Projects</p>
+									<p class="trending-profile-description">
+										Chill Vibe Projects
+									</p>
 								</div>
 							</div>
 							<div class="flex trending-profile-div">
-								<div class="trending-pfp-div pfp-div" id="trending-pfp-div-3"></div>
+								<div
+									class="trending-pfp-div pfp-div"
+									id="trending-pfp-div-3"
+								></div>
 								<div class="trending-profile-name-and-description-div">
 									<p class="trending-profile-name">@rudy</p>
 									<p class="trending-profile-description">Life Changing App</p>
 								</div>
 							</div>
 							<div class="flex trending-profile-div">
-								<div class="trending-pfp-div pfp-div" id="trending-pfp-div-4"></div>
+								<div
+									class="trending-pfp-div pfp-div"
+									id="trending-pfp-div-4"
+								></div>
 								<div class="trending-profile-name-and-description-div">
 									<p class="trending-profile-name">@mimi</p>
 									<p class="trending-profile-description">Cool Arts Maker</p>

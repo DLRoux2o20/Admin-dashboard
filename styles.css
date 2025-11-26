@@ -116,6 +116,10 @@ hr {
 	margin-block: 1em;
 }
 
+svg {
+	width: 50%;
+}
+
 .grid {
 	display: grid;
 }
@@ -124,12 +128,35 @@ hr {
 	display: flex;
 }
 
+.nav-div {
+	flex-direction: column;
+	gap: 0.7em;
+}
+
+.icon-and-link-div {
+	align-items: center;
+	gap: 0.2em;
+}
+
+.icon-and-link-div i {
+	font-size: 0.7rem;
+}
+
+.link {
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
 .header-child-div {
 	width: 100%;
 	padding-inline: 1em;
-	gap: 1em;
+	gap: 0.8em;
 	align-items: center;
 	justify-content: center;
+}
+
+.fa-bell {
+	font-size: 1.15rem;
 }
 
 .pfp-div {
@@ -147,7 +174,13 @@ hr {
 }
 
 .main-profile-name {
-	font-weight: bold;
+	font-size: 0.95rem;
+	font-weight: 800;
+}
+
+.big-main-profile-name {
+	font-size: 1rem;
+	font-weight: 800;
 }
 
 .card {
@@ -211,8 +244,24 @@ hr {
 	color: #757575;
 }
 
+#sidebar-heading-div {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#sidebar-heading-div > h3 {
+	font-weight: 700;
+	margin: 0;
+}
+
 #big-pfp-text-div {
+	line-height: 1.3;
 	display: inline-block;
+}
+
+#big-pfp-text-div p:first-child {
+	font-size: 0.7rem;
+	font-weight: 700;
 }
 
 #main-div {
@@ -222,8 +271,14 @@ hr {
 }
 
 #sidebar-div {
+	color: white;
 	background-color: var(--blue);
+	padding-inline: 0.2em;
+	padding-block: 0.5em;
+	text-align: center;
 	grid-row: 1 / 3;
+	grid-template-rows: max-content max-content max-content;
+	gap: 2em;
 }
 
 #header-div {
@@ -242,7 +297,8 @@ hr {
 	padding-inline: 1em;
 }
 
-#projects-div, #announcements-div {
+#projects-div,
+#announcements-div {
 	margin-bottom: 10px;
 }
 
