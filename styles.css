@@ -3,6 +3,7 @@
 	--yellow: #fffd98;
 	--yellow2: #ffbf00;
 	--grey: #dedede;
+	--card-shadow: 3px 3px 5px -1px rgb(165, 165, 165);
 }
 
 *,
@@ -70,15 +71,24 @@ body {
 }
 
 input {
+	width: 155px;
 	height: 50%;
 	border: 0;
 	background-color: var(--grey);
+	padding-block: 0.2em;
+	padding-inline: 0.8em;
 	border-radius: 20px;
+	font-size: 0.7rem;
+}
+
+input:focus {
+	outline-color: var(--blue);
 }
 
 p,
 button,
-h3 {
+h3,
+input {
 	font-family: "Roboto", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
@@ -191,6 +201,7 @@ svg {
 	background-color: white;
 	border-left: 8px solid var(--yellow2);
 	border-radius: 8px;
+	box-shadow: var(--card-shadow);
 }
 
 .card-heading {
@@ -282,8 +293,10 @@ svg {
 }
 
 #header-div {
+	position: relative;
 	height: 25vh;
 	background-color: white;
+	box-shadow: 0 4px 3px -1px rgb(185, 185, 185);
 	grid-template: 1fr 1fr 1.5fr 1.5fr / 1fr;
 }
 
@@ -311,6 +324,7 @@ svg {
 	padding: 2em;
 	border-radius: 8px;
 	background-color: white;
+	box-shadow: var(--card-shadow);
 }
 
 #trending-div {
@@ -321,6 +335,7 @@ svg {
 	margin-bottom: 30px;
 	border-radius: 8px;
 	background-color: white;
+	box-shadow: var(--card-shadow);
 }
 
 #trending-pfp-div-1 {
