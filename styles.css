@@ -152,7 +152,7 @@ svg {
 	font-size: 0.7rem;
 }
 
-.link {
+.nav-link {
 	font-weight: 700;
 	font-size: 0.8rem;
 }
@@ -191,6 +191,11 @@ svg {
 .big-main-profile-name {
 	font-size: 1rem;
 	font-weight: 800;
+}
+
+.card-link {
+	line-height: 0;
+	color: black;
 }
 
 .card {
