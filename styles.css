@@ -130,6 +130,11 @@ svg {
 	width: 50%;
 }
 
+img {
+	width: 75%;
+	height: 75%;
+}
+
 .grid {
 	display: grid;
 }
@@ -175,6 +180,9 @@ svg {
 	height: 35px;
 	background-color: var(--yellow2);
 	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .big-pfp-div {
@@ -347,10 +355,24 @@ svg {
 	background-color: #95d7e6;
 }
 
+#tiger-pfp {
+	margin-top: 0.2em;
+}
+
 #trending-pfp-div-3 {
-	background-color: #6e6e6e;
+	background-color: #999999;
+}
+
+#lion-pfp {
+	width: 80%;
+	height: 80%;
 }
 
 #trending-pfp-div-4 {
 	background-color: #f2aae7;
+}
+
+#giraffe-pfp {
+	width: 68%;
+	height: 68%;
 }
