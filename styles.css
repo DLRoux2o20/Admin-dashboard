@@ -71,8 +71,8 @@ body {
 }
 
 input {
-	width: 155px;
-	height: 50%;
+	width: 100%;
+	height: max(28%, 18px);
 	border: 0;
 	background-color: var(--grey);
 	padding-block: 0.2em;
@@ -101,8 +101,8 @@ p {
 }
 
 button {
-	width: 25%;
-	height: 50%;
+	width: 35%;
+	height: 32px;
 	font-size: 0.7rem;
 	font-weight: 600;
 	background-color: var(--blue);
@@ -164,7 +164,6 @@ img {
 
 .header-child-div {
 	width: 100%;
-	padding-inline: 1em;
 	gap: 0.8em;
 	align-items: center;
 	justify-content: center;
@@ -309,8 +308,10 @@ img {
 	position: relative;
 	height: 25vh;
 	background-color: white;
+	padding-inline: 1.5em;
 	box-shadow: 0 4px 3px -1px rgb(185, 185, 185);
-	grid-template: 1fr 1fr 1.5fr 1.5fr / 1fr;
+	grid-template: 1fr 1fr / repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-rows: 1.5fr;
 }
 
 #header-child-div-buttons {
@@ -375,4 +376,25 @@ img {
 #giraffe-pfp {
 	width: 68%;
 	height: 68%;
+}
+
+
+/* @media only screen and (max-height: 425px) {
+	
+} */
+
+@media only screen and (min-width: 600px) {
+	#main-div {
+		grid-template-rows: 150px 1fr;
+	}
+	#header-div {
+		height: 150px;
+	}
+	#header-child-div-small-pfp {
+		justify-content: right;
+		padding-right: 1em;
+	}
+	#header-child-div-big-pfp {
+		justify-content: left;
+	}
 }
