@@ -397,12 +397,24 @@ img {
 	
 } */
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 750px) {
 	button {
 		font-size: 0.8rem;
 	}
+	.icon-and-link-div {
+		gap: 1em;
+	}
+	.icon-and-link-div i {
+		font-size: 0.9rem;
+	}
+	.nav-link {
+		font-size: 1rem;
+	}
 	.main-profile-name {
 		font-size: 1rem;
+	}
+	.big-main-profile-name {
+		font-size: 1.2rem;
 	}
 	#main-div {
 		grid-template-rows: 150px 1fr;
