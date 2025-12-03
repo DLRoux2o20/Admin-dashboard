@@ -213,13 +213,19 @@ img {
 
 .card {
 	width: 100%;
-	height: max(25vh, max-content);
 	padding-block: 1.5em;
 	padding-inline: 1em;
 	background-color: white;
 	border-left: 8px solid var(--yellow2);
 	border-radius: 8px;
 	box-shadow: var(--card-shadow);
+}
+
+.card-content-wrapper {
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .card-heading {
@@ -235,6 +241,7 @@ img {
 }
 
 .icons-div {
+	margin-left: auto;
 	justify-self: right;
 	gap: 0.8em;
 }
@@ -340,13 +347,24 @@ img {
 	padding-inline: 1em;
 }
 
-#projects-div,
+#sub-content-div {
+	align-items: start;
+	padding-bottom: 3em;
+	column-gap: 1.5em;
+}
+
+#projects-div {
+	align-content: start;
+	grid-template-rows: max-content 1fr;
+}
+
 #announcements-div {
 	margin-bottom: 10px;
 }
 
-#projects-div {
-	gap: 1em;
+#cards-wrapper {
+	gap: 1.5em;
+	row-gap: 2em;
 }
 
 #announcements-div {
@@ -362,7 +380,6 @@ img {
 	flex-direction: column;
 	gap: 1.5em;
 	padding: 1.5em;
-	margin-bottom: 30px;
 	border-radius: 8px;
 	background-color: white;
 	box-shadow: var(--card-shadow);
@@ -433,7 +450,6 @@ img {
 		height: 150px;
 		column-gap: 1.5em;
 		padding-inline: 2em;
-		
 	}
 	#header-child-div-small-pfp {
 		justify-content: right;
@@ -442,6 +458,9 @@ img {
 	#header-child-div-big-pfp {
 		justify-content: left;
 	}
+	#cards-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
 }
 
 @media only screen and (min-width: 950px) {
@@ -449,8 +468,66 @@ img {
 		height: 38px;
 		font-size: 0.85rem;
 	}
+	#sidebar-div {
+		gap: 3em;
+	}
 	#header-div {
 		grid-template-columns: 2fr 1fr;
 		padding-inline: 2.5em;
+	}
+	#sub-content-div {
+		grid-template-columns: 2.5fr 1fr;
+	}
+	#projects-div {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	svg {
+		width: 50px;
+	}
+	.nav-div {
+		gap: 1em;
+	}
+	.icon-and-link-div i {
+		font-size: 1rem;
+	}
+	.nav-link {
+		font-size: 1.2rem;
+	}
+	#sidebar-heading-div > h3 {
+		font-size: 1.7rem;
+	}
+	#main-div {
+		grid-template-columns: 16vw 3fr;
+	}
+	#cards-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	svg {
+		width: 60px;
+	}
+	.icon-and-link-div i {
+		font-size: 1.15rem;
+	}
+	.nav-link {
+		font-size: 1.35rem;
+	}
+	.card {
+		padding-block: 1.8em;
+		padding-inline: 1.25em;
+	}
+	#sidebar-div {
+		padding-left: 1.5em;
+	}
+	#sidebar-heading-div > h3 {
+		font-size: 1.9rem;
+	}
+	#sub-content-div {
+		grid-template-columns: 2fr 20vw;
 	}
 }
