@@ -169,6 +169,10 @@ img {
 	justify-content: center;
 }
 
+.fa-star:hover {
+	cursor: pointer;
+}
+
 .fa-bell {
 	font-size: 1.15rem;
 }
@@ -508,8 +512,14 @@ img {
 }
 
 @media only screen and (min-width: 1800px) {
+	body {
+		overflow: hidden;
+	}
 	svg {
 		width: 60px;
+	}
+	p {
+		font-size: 1rem;
 	}
 	.icon-and-link-div i {
 		font-size: 1.15rem;
@@ -517,15 +527,30 @@ img {
 	.nav-link {
 		font-size: 1.35rem;
 	}
+	.big-main-profile-name {
+		font-size: 1.4rem;
+	}
 	.card {
 		padding-block: 1.8em;
 		padding-inline: 1.25em;
+	}
+	.card-heading {
+		font-size: 1.2rem;
+	}
+	.icons-div i {
+		font-size: 1.1rem;
 	}
 	#sidebar-div {
 		padding-left: 1.5em;
 	}
 	#sidebar-heading-div > h3 {
 		font-size: 1.9rem;
+	}
+	#big-pfp-text-div p:first-child {
+		font-size: 0.85rem;
+	}
+	#main-content-div {
+		padding-right: 2em;
 	}
 	#sub-content-div {
 		grid-template-columns: 2fr 20vw;
